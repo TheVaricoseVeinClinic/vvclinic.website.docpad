@@ -1,0 +1,146 @@
+---
+title: "Home"
+layout: "default"
+TopMenuCategory: "Home"
+scripts: ['/js/index.js']
+priority: 1.0
+---
+
+block content
+  section.heading-slider
+    #starting-slider.owl-carousel.owl-theme
+      .item
+        .slider-1
+          .slider-inner
+            .container
+              .row
+                .col-md-12
+                  .slider-inner-text
+                    h1 Consultant Surgeon Led Clinics
+                    p
+                      | Experienced Consultant Surgeons and Nurses with full NHS practises specialising in
+                      | Vasular Surgery treating the full range of conditions effecting veins and arteries
+
+      .item
+        .slider-2
+          .slider-inner
+            .container
+              .row
+                .slider-inner-text
+                  h1 Modern Treaments
+                  p
+                    | Laser EVLT, Radio-frequency ablation RFA and Foam / Micro Sclerotherapy offered by Doctor run clinics
+
+                  a.btn.btn-success.btn-lg(role="button", href="/treatments.html") View Treatments
+                  span.seperate-buttons &nbsp;
+                  a.btn.btn-success.btn-lg(role="button", href="/team.html") Meet the Team
+
+      .item
+        .slider-3
+          .slider-inner
+            .container
+              .row
+                .slider-inner-text
+                  h1 No obligation free consultation
+                  p
+                    | Free 10 minute consultation offering imparitial advise
+
+                  a.btn.btn-success.btn-lg(role="button", href="tel:08000209511") Call 0800 020 9511
+                  span.seperate-buttons Or
+                  a.btn.btn-success.btn-lg(role="button", href="/contact.html") Contact Us Online
+
+  section.starting-text
+    .container
+      .row
+        .welcome
+          h2.welcome-title Welcome To The Surrey Vein Clinic
+          p.welcome-txt
+            | A private clinic specialising in the treatment of varicose veins, spider veins, facial flare / thread veins and other vascular conditions. Backed
+            | by a team of surgeons, radiologists and nurse practitioners who have NHS practises at 
+            a(href="http://www.frimleyhealth.nhs.uk/") Frimley Health NHS Trust 
+            |, the first NHS Trust to recieve a #[a(href="http://www.cqc.org.uk/provider/RDU") CQC Outstanding Rating]
+
+          a(href="#booking_anchor").welcome-btn Book a Free Mini consultation
+
+  section#services
+    .container
+      .row
+        .col-lg-12.col-sm-12.col-xs-12
+          h2.headline.text-center
+            | Why Choose Us
+          p.sub-headline.text-center
+            | We offer a comprehensive range of modern treatments including minimally invasive EVLT Laser, Radio Frequency Ablation (RFA),
+            | Foam Sclerotherapy and Micro Sclerotherapy for thread and spider veins. We run clinics from a number of locations including
+            | Surrey, Hampshire, Berkshire and Ascot and at times to suit you. All clinics are run by Consultant Surgeons
+
+  a(name="booking_anchor")
+  section#testimonial.text-center
+    .testimonial-wrapper
+      .container
+        .row.client-content.text-center
+          .col-md-8
+            .row
+              h1 Testimonial
+            .row
+              .sub-headline
+                p What Our Patients Say About Us
+            #carousel-quotes.carousel.slide(data-ride='carousel')
+              // Wrapper for slides
+              .carousel-inner(role='listbox')
+                .item.active
+                  #client-speech
+                    .item
+                      .row
+                        .col-md-12
+                          i.fa.fa-quote-left
+                        .col-md-8.col-md-offset-2
+                          p.client-comment.text-center
+                            | I would like to recommend Mr David Gerrard who was my Consultant at Parkside
+                            | Suite at Frimley Park Hospital. I had a really bad varicose vein on my left leg
+                            | from bottom to the top was very thick and prominent, it got to the point I
+                            | wouldn’t wear dresses / skirts unless I had  my legs covered up and in the summers 
+                            | it would get very itchy and uncomfortable.
+
+                          p.client-comment.text-center
+                            | I had my consultation with Mr Gerrard in March 2015 and had my removal done on the
+                            | 24th of June under local anaesthetic. I had the Endovenous Laser Therapy this was
+                            | done in an evening surgery appointment and was able to walk out of the hospital
+                            | I have to say this was very pain free and within a day or so I had my bandages
+                            | off and wore a stocking for 10 days and 5 nights its now just over a month on and
+                            | am so pleased with the result no sign of the vein would highly recommend this
+                            | treatment to anyone my family and friends can’t believe the result.
+
+                        .col-md-12
+                          i.fa.fa-quote-right
+                      .row.text-center
+                        p.client-name.text-center Mrs Bates
+
+                .item
+                  #client-speech
+                    .item
+                      .row
+                        .col-md-12
+                          i.fa.fa-quote-left
+                        .col-md-8.col-md-offset-2
+                          p.client-comment.text-center
+                            | When you form a team, why do you try to form a team? Because teamwork builds trust and trust builds speed.
+                        .col-md-12
+                          i.fa.fa-quote-right
+                        .col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3.col-xs-6.col-xs-offset-3
+                          img.img-circle.img-responsive.center-block(src='/img/client1.jpg', alt='Image')
+                      .row.text-center
+                        p.client-name.text-center John Doe
+
+
+              a.left.carousel-control(href='#carousel-quotes', role='button', data-slide='prev')
+                i.fa.fa-angle-left.fa-3x
+                span.sr-only Previous
+              a.right.carousel-control(href='#carousel-quotes', role='button', data-slide='next')
+                i.fa.fa-angle-right.fa-3x
+                span.sr-only Next
+
+          .col-md-4
+            != partial('booking_form')
+
+        // client-content
+  // testimonial

@@ -1,0 +1,52 @@
+section.navs(style="position: absolute; padding-left: 50px;")
+
+  //- This nav MUST come above the main navbar otherwise the main one
+  //- overlaps it and the a hrefs don't work
+  nav.navbar.navbar-default.navbar-static-top(role='contact' style="z-index: 1000;padding-bottom: 0")
+    .container
+        ul.nav.navbar-right(class=document.header_light && document.header_light == true ? "nav-tel-dark" : "nav-tel")
+          li
+            a(href="tel:08000209511")
+              i.fa.fa-phone
+              | &nbsp;
+              | 0800 020 9511
+
+  nav.navbar.navbar-default.navbar-static-top(role='navigation' style="background-color: transparent; top:-80px;")
+    .container
+      //- Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-nav-bar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+
+        a.navbar-brand(href='/')
+          img.logo-img(src="/img/logo.png" alt="The Varicose Vein Clinic")
+
+      //- Collect the nav links, forms, and other content for toggling
+      #main-nav-bar.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li(class=document.TopMenuCategory==="Home"?"active":"")
+            a(href='/') Home
+
+          li(class=document.TopMenuCategory==="Treatments"?"active":"")
+            a(href='/treatments.html') Treatments
+
+          li(class=document.TopMenuCategory==="Team"?"active":"")
+            a(href='/team.html') Team
+
+          li(class=document.TopMenuCategory==="Cost"?"active":"")
+            a(href='/cost.html') Cost
+
+          li(class=document.TopMenuCategory==="FAQs"?"active":"")
+            a(href='/faq.html') FAQs
+
+          //- li(class=document.TopMenuCategory==="Gallery"?"active":"")
+          //-   a(href='/gallery.html') Gallery
+
+          li(class=document.TopMenuCategory==="Contact"?"active":"")
+            a(href='/contact.html') Contact
+      //- navbar-collapse
+    //- container-fluid
+

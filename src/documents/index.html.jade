@@ -1,0 +1,215 @@
+---
+title: "Home"
+layout: "default"
+TopMenuCategory: "Home"
+scripts: ['/js/index.js']
+priority: 1.0
+header_light: true
+---
+
+block content
+  section.heading-mainpage
+    .mainpage-inner
+      .container
+        .row
+          .col-sm-12.col-md-9.text-center
+            h1 Modern Vein Treatment from Consultant Surgeons
+
+            h2
+              | Laser EVLT, Radio-frequency ablation (RFA),
+              | Foam Sclerotherapy and Micro Sclerotherapy
+
+        .row
+          .col-sm-12.col-md-9.text-center
+            h3.margin-top-20
+              | Free #{site.mini_consult_duration} minute vein consultation offering impartial advice
+
+        .row
+          .col-sm-12.col-md-9.text-center
+            .cta_form
+              form#cta-form.form-inline(action="#")
+                .form-group.form-group-lg
+                  label.sr-only Email
+                  input#email-cta.form-control.input-lg.cta-form-email(type="email" name="email" placeholder="Your Email ...")
+                  button.btn.btn-success.btn-lg Send
+                  //- Extra formspree.io fields
+                  input(type="hidden" name="_next" value="/")
+                  input(type="hidden" name="_subject" value="Surrey Vein Clinic Mini Consult Website Enquiry")
+                  input(type="text" name="_gotcha" style="display:none")
+
+            #email-cta-success.margin-top-10.alert.alert-success.collapse(role="alert")
+              | Thank you for your email. We will be in touch soon.
+             #email-cta-fail.margin-top-10.alert.alert-danger.collapse(role="alert")
+              | We are sorry, but there was an error sending your request. Please try
+              | again or call our free number
+              | <a href="tel:0800 020 9511" class="alert-link">0800 020 9511</a>.
+
+        .row
+          .col-sm-12.col-md-9.text-center
+            h4 Or free call on 
+              a(role="button", href="tel:08000209511") 0800 020 9511
+
+  section.starting-text
+    .container
+      .row
+        .welcome
+          h2.welcome-title Welcome To The Varicose Vein Clinic
+          p.welcome-txt
+            | A private clinic specialising in the treatment of varicose veins, spider veins,
+            | flare / thread veins (including facial) and other vascular conditions. Backed
+            | by a team of surgeons, radiologists and specialist nurse practitioners who
+            | have full NHS practises at 
+            a(href="http://www.frimleyhealth.nhs.uk/") Frimley Health NHS Trust 
+            | , the first NHS Trust to receive 
+            | a #[a(href="http://www.cqc.org.uk/provider/RDU") CQC Outstanding Rating]
+
+          a(href="#booking_anchor").welcome-btn Book a Free Mini consultation
+
+  section#services
+    .container
+      .row
+        .col-lg-12.col-sm-12.col-xs-12
+          h2.headline.text-center
+            | Why Choose Us
+          p.sub-headline.text-center
+            | We offer a comprehensive range of modern treatments including minimally invasive EVLT Laser, Radio Frequency Ablation (RFA),
+            | Foam Sclerotherapy and Micro Sclerotherapy for thread and spider veins. We run clinics from a number of locations including
+            | Surrey, Hampshire, Berkshire and Ascot and at times to suit you. All clinics are run by Consultant Surgeons
+
+  a(name="booking_anchor")
+  section#testimonial.text-center
+    .testimonial-wrapper
+      .container
+        .row.client-content.text-center
+          .col-md-8
+            .row
+              h1 Testimonial
+            .row
+              .sub-headline
+                p What Our Patients Say About Us
+            #carousel-quotes.carousel.slide(data-ride='carousel')
+              // Wrapper for slides
+              .carousel-inner(role='listbox')
+                .item.active
+                  #client-speech
+                    .item
+                      .row
+                        .col-md-12
+                          i.fa.fa-quote-left
+                        .col-md-8.col-md-offset-2
+                          p.client-comment.text-center
+                            | I would like to recommend Mr David Gerrard who was my Consultant at Parkside
+                            | Suite at Frimley Park Hospital. I had a really bad varicose vein on my left leg
+                            | from bottom to the top was very thick and prominent, it got to the point I
+                            | wouldn’t wear dresses / skirts unless I had  my legs covered up and in the summers 
+                            | it would get very itchy and uncomfortable.
+
+                          p.client-comment.text-center
+                            | I had my consultation with Mr Gerrard in March 2015 and had my removal done on the
+                            | 24th of June under local anaesthetic. I had the Endovenous Laser Therapy this was
+                            | done in an evening surgery appointment and was able to walk out of the hospital
+                            | I have to say this was very pain free and within a day or so I had my bandages
+                            | off and wore a stocking for 10 days and 5 nights its now just over a month on and
+                            | am so pleased with the result no sign of the vein would highly recommend this
+                            | treatment to anyone my family and friends can’t believe the result.
+
+                        .col-md-12
+                          i.fa.fa-quote-right
+                      .row.text-center
+                        p.client-name.text-center Mrs Bates
+
+                .item
+                  #client-speech
+                    .item
+                      .row
+                        .col-md-12
+                          i.fa.fa-quote-left
+                        .col-md-8.col-md-offset-2
+                          p.client-comment.text-center
+                            | Great Service from start to finish.
+                            | I have already recommended the clinic to a friend. Mr Dastur and his team
+                            | went out of their way to make me feel relaxed and comfortable throughout
+                            | the procedure.
+                        .col-md-12
+                          i.fa.fa-quote-right
+
+                      .row.text-center
+                        p.client-name.text-center Ms Cannon
+
+                .item
+                  #client-speech
+                    .item
+                      .row
+                        .col-md-12
+                          i.fa.fa-quote-left
+                        .col-md-8.col-md-offset-2
+                          p.client-comment.text-center
+                            | Very impressed with Parkside and Mr Dastur, he is an excellent consultant
+                        .col-md-12
+                          i.fa.fa-quote-right
+
+                      .row.text-center
+                        p.client-name.text-center Mrs Behrendt
+
+                .item
+                  #client-speech
+                    .item
+                      .row
+                        .col-md-12
+                          i.fa.fa-quote-left
+                        .col-md-8.col-md-offset-2
+                          p.client-comment.text-center
+                            | The staff were brilliant!! I had to have two operations and the treatment
+                            | and aftercare never faltered
+                        .col-md-12
+                          i.fa.fa-quote-right
+
+                      .row.text-center
+                        p.client-name.text-center Mrs Brooker-Jones
+
+                .item
+                  #client-speech
+                    .item
+                      .row
+                        .col-md-12
+                          i.fa.fa-quote-left
+                        .col-md-8.col-md-offset-2
+                          p.client-comment.text-center
+                            | I have been lucky enough to have been treated by all 3 doctors on the
+                            | team! I found them all very jolly and courteous. My treatment and aftercare
+                            | was first class and the nurses were great! Would definitly reccomend this
+                            | clinic to anyone who needs their veins done!
+                        .col-md-12
+                          i.fa.fa-quote-right
+
+                      .row.text-center
+                        p.client-name.text-center Mrs Myers
+
+                .item
+                  #client-speech
+                    .item
+                      .row
+                        .col-md-12
+                          i.fa.fa-quote-left
+                        .col-md-8.col-md-offset-2
+                          p.client-comment.text-center
+                            | Excellent reception and treatment
+                        .col-md-12
+                          i.fa.fa-quote-right
+
+                      .row.text-center
+                        p.client-name.text-center Ms Mazurk
+
+
+              a.left.carousel-control(href='#carousel-quotes', role='button', data-slide='prev')
+                i.fa.fa-angle-left.fa-3x
+                span.sr-only Previous
+              a.right.carousel-control(href='#carousel-quotes', role='button', data-slide='next')
+                i.fa.fa-angle-right.fa-3x
+                span.sr-only Next
+
+          .col-md-4
+            != partial('booking_form')
+
+        // client-content
+  // testimonial

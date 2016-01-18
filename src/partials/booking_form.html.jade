@@ -1,0 +1,45 @@
+.appointment
+  .header.text-center
+    h2 Make an Appointment
+    a.number(href='tel:08000209511')
+      i.fa.fa-phone.fa-fw
+      |  0800 020 9511
+    span.or OR
+  // form of appointment
+  .row
+    form#booking-form(method='post', action='#')
+      .form
+        input(type="hidden" name="_next" value="/")
+        input(type="hidden" name="_subject" value="Surrey Vein Clinic Booking Form")
+        input(type="text" name="_gotcha" style="display:none")
+
+        .input-group.margin-bottom-sm.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+          input.form-control(type='text' name="fullname" placeholder='Full Name *', required='')
+        .input-group.margin-bottom-sm.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+          input.form-control(type='text' name="email" placeholder='Email Address *', required='')
+        .input-group.margin-bottom-sm.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+          input.form-control(type='text' name="mobile" placeholder='Mobile Number *', required='')
+        .input-group.margin-bottom-sm.col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+          textarea.form-control(rows='6', name="problem" placeholder='Your Message', required='')
+
+      //- .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+      //-   .g-recaptcha(data-size="compact" data-sitekey="6LcHaQkTAAAAAC8BnniU12apitT4sfjb3TrUVNhN" style="width: 164px; margin: 0 auto; display: block")
+
+      //- .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1.text-center
+      //-   .g-recaptcha(data-size="compact" data-sitekey="6LcHaQkTAAAAAC8BnniU12apitT4sfjb3TrUVNhN" style="display: inline-block")
+
+      .clearfix
+
+      .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+        #booking-success.margin-top-10.alert.alert-success.collapse(role="alert")
+          | Thank you for contacting us. We will be in touch soon.
+
+        #booking-fail.margin-top-10.alert.alert-danger.collapse(role="alert")
+          | Really sorry, there was an error sending your request. Please try
+          | again or call our free number
+          | <a href="tel:0800 020 9511" class="alert-link">0800 020 9511</a>.
+
+      .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
+        input.btn.btn-primary.send(type='submit', value='Send')
+  // end of form
+// end of appointment

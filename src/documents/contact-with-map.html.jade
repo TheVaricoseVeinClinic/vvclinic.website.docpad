@@ -1,0 +1,68 @@
+---
+title: "Contact"
+layout: "default"
+TopMenuCategory: "Contact"
+scripts: ['https://maps.googleapis.com/maps/api/js']
+priority: 1.0
+---
+
+block content
+  section.contact-title.text-center
+    .contact-wrapper
+      .container
+        .row
+          div
+            h1.headline Contact us
+        .row
+          .sub-headline
+            p 
+  section.contact-content
+    .container
+      .row
+        .col-md-8
+          .google-map
+            #map-canvas
+          .quick-contact
+            h3 Main Office Contact Details
+            hr
+            .row
+              .col-md-6
+                .row
+                  .col-md-2
+                    p
+                      i.fa.fa-home
+                  .col-md-10
+                    p
+                      | Full Address:<br/>
+                      | 2nd Floor<br/> 
+                      | The Parkside Suite<br/>
+                      | Frimley Park Hospital<br/>
+                      | Portsmouth Road<br/>
+                      | Camberley<br/>
+                      | GU16 7UJ
+              .col-md-6
+                p
+                  i.fa.fa-phone
+                  span Telephone: <a href="tel:0800 020 9511">0800 020 9511</a>
+                p
+                  i.fa.fa-fax
+                  span Fax: 01276 526868
+
+        .col-md-4
+          != partial('booking_form')
+
+  script.
+    function initialize() {
+      var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+        center: new google.maps.LatLng(24.900392, 91.853181),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions)
+    };
+
+    $(document).ready(function() {
+      new WOW().init();
+      google.maps.event.addDomListener(window, 'load', initialize);
+    };

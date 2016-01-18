@@ -1,0 +1,193 @@
+---
+title: "Gallery"
+layout: "default"
+TopMenuCategory: "Gallery"
+scripts: ['']
+priority: 1.0
+---
+
+block content
+  section.gallery-title.text-center
+    .gallery-wrapper
+      .container
+        .row
+          div
+            h1.headline Our Gallery
+        .row
+          .sub-headline
+            p Lorem ipsum dolor sit amet, consectetur 
+  section.gallery-content
+    .container
+      .row.port
+        #filters.col-md-8.col-md-offset-2.text-center.button-group
+          button.gallery-btn.btn-primary.btn.is-checked(type='button', data-filter='*') All
+          button.gallery-btn.btn-primary.btn(type='button', data-filter='.care') Care
+          button.gallery-btn.btn-primary.btn(type='button', data-filter='.treatment') Treatment
+          button.gallery-btn.btn-primary.btn(type='button', data-filter='.staff') Staff
+          button.gallery-btn.btn-primary.btn(type='button', data-filter='.donation') Donation
+          button.gallery-btn.btn-primary.btn(type='button', data-filter='.pharmacy') Pharmacy
+      // row
+      .row
+        #port-items.isotope
+          .col-md-4.col-sm-6.col-xs-6.element-item.care(data-category='care')
+            img.img-responsive.center-block(src='/img/care1.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Lorem ipsum dolor porro non delectus cupiditate a!
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.treatment(data-category='treatment')
+            img.img-responsive.center-block(src='/img/treatment2.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Lorem ipsum dolor assumenda minima sapiente eius cum
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.staff(data-category='staff')
+            img.img-responsive.center-block(src='/img/staff1.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.care(data-category='care')
+            img.img-responsive.center-block(src='/img/care2.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Lorem ipsum dolor sit natus beatae nobis temporibus sint
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.treatment(data-category='treatment')
+            img.img-responsive.center-block(src='/img/treatment1.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Lorem ipsum aperiam ipsam voluptas ipsum dolor sit quam.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.staff(data-category='staff')
+            img.img-responsive.center-block(src='/img/staff2.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Lorem ipsum dolor sit amet, assumenda numquam tempora.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.care(data-category='care')
+            img.img-responsive.center-block(src='/img/care3.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | qui nihil ducimus nobis quidem sed a Sint, dolore.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.treatment(data-category='treatment')
+            img.img-responsive.center-block(src='/img/treatment4.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Lorem atque quas laboriosam eaque neque expedita nisi.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.staff(data-category='staff')
+            img.img-responsive.center-block(src='/img/staff4.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Lorem ipsum dolor sit ametident, facere, tempore rem
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.donation(data-category='donation')
+            img.img-responsive.center-block(src='/img/donation2.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | repellat dicta. Debitis dignissimos inventore pariatur.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.pharmacy(data-category='pharmacy')
+            img.img-responsive.center-block(src='/img/pharmacy1.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | distnctio atque ipsum illo magnam error perspiciatis ab!
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.staff(data-category='staff')
+            img.img-responsive.center-block(src='/img/staff3.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Debitis aliquam, cupiditate error nihil iure doloribus.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.donation(data-category='donation')
+            img.img-responsive.center-block(src='/img/donation1.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | poris veniam dolores consequatur, quae dignissimos omnis.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.pharmacy(data-category='pharmacy')
+            img.img-responsive.center-block(src='/img/pharmacy2.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | voluptates odit quos, odio fuga in consectetur.
+            // /.item-desc
+          .col-md-4.col-sm-6.col-xs-6.element-item.treatment(data-category='treatment')
+            img.img-responsive.center-block(src='/img/treatment3.jpg', alt='Image')
+            .item-desc.hidden-xs
+              .item-title
+                h3 Lorem Ipsum
+              .item-tags
+                p
+                  | Eaque quos, veniam doloribus consectetur cum. Sunt
+            // /.item-desc
+        // isotope
+      // row
+
+script.
+  new WOW().init();
+script.
+  $( function() {
+    // init Isotope
+    var $container = $('.isotope').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows'
+    });
+    // bind filter button click
+    $('#filters').on( 'click', 'button', function() {
+      var filterValue = $( this ).attr('data-filter');
+      // use filterFn if matches value
+      $container.isotope({ filter: filterValue });
+    });
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+      });
+    });
+  });

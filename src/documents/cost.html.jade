@@ -1,0 +1,157 @@
+---
+title: "Cost of Treatments"
+layout: "default"
+TopMenuCategory: "Cost"
+scripts: ['']
+priority: 1.0
+---
+
+block content
+  section.cost-title
+    .cost-heading-wrapper
+      .container
+        .row
+          .col-md-6.col-md-offset-1
+            h1 Cost of Vein Treatment
+            p
+              | A guide to the costs of consultation and treatment. The prices quoted are per leg.
+              | Your exact treatment requirements will be discussed at your consultation.
+
+          .col-md-4
+            a.btn.btn-success.btn-lg(role="button", href="#booking_anchor" style='margin-top: 20px;') Book a Free Mini consultation
+            //- a(href="#booking_anchor").welcome-btn Book a Free Mini consultation
+
+  article.cost
+    .container
+      .row
+        .col-lg-12.col-sm-12.col-xs-12
+             h2.headline.text-center
+              | A Guide to the cost of Vein Treatment
+
+    section.cost-table
+      .container
+        .row
+          .col-lg-12.col-sm-12.col-xs-12
+            table.table.table-striped.table-bordered.table-hover.table-responsive
+              thead
+                tr
+                  th Description
+                  th.col-sm-2 Price
+                  th.col-sm-2 CCSD (BUPA) Code
+              tbody
+                tr
+                  td Consultation with Vascular Surgeon
+                  td &pound; 150
+                  td 20300
+
+                tr
+                  td Consultation with Vascular Surgeon and Colour Duplex Ultrasound Scan (usually recomended for varicose veins)
+                  td &pound; 290
+                  td 20300 &amp; IM269
+
+                tr
+                  td Consultation including first treatment session for flare / thread veins
+                  td &pound; 220
+                  td n/a
+
+                tr
+                  td Follow up injection sessions
+                  td &pound; 190
+                  td n/a
+
+                tr
+                  td Foam injection sclerotherapy treatment with ultrasound
+                  td &pound; 650
+                  td L8620
+
+                tr
+                  td
+                    | Varicose vein surgery (Avulsions) under local anaesthetic (LA)
+                    br
+                    | (Includes stockings and follow-up appointment)
+                  td from &pound; 800
+                  td L8510 (closet match)
+
+                tr
+                  td Varicose vein surgery under general anaesthetic (GA)
+                  td By quotation 
+                  td L8510
+
+                tr
+                  td
+                    | Endovenous Laser / Radio-frequency therapy under local anaesthetic
+                    br
+                    | (Includes stockings and follow-up appointment)
+
+                  td from &pound; 1,650
+                  td L8512 / L8540
+
+                tr
+                  td Endovenous Laser / Radio-frequency Therapy under general anaesthetic
+                  td By quotation
+                  td L8512 / L8540
+
+                tr
+                  td Hyperhidrosis Botox Treatment
+                  td &pound; 360
+                  td n/a
+
+  section
+    .container
+      .row
+        .col-lg-12.col-sm-12.col-xs-12
+          h3 Self Pay
+          p
+            | Many of our patients pay for treatment themselevs as they don't have or want a full
+            | health insurance policy. Many health insurance policy also do not cover procedures
+            | they deem cosmetic.
+          p 
+            | The prices above are for patients that wish to self pay and are a fixed cost.
+            | Included in the prices is a follow-up appointment (if required) and incidentals
+            | such as dressings and compression stockings.
+
+      .row
+        .col-lg-12.col-sm-12.col-xs-12
+          h3 Payment Options
+          p
+            | We accept all major credit cards but can also accept transfer by Internet / Online
+            | banking prior to your visit.
+            | Unfortunitly, cheques will incur a 50 pence admin charge
+
+      .row
+        .col-lg-12.col-sm-12.col-xs-12
+          h3 Private Health Insurance
+          p 
+            | We operate as a private clinic so we do not offer free treatment on the NHS. However,
+            | if you have private health insurance it is possible your health insurance may cover
+            | some or all of the costs. Many insurance companies cover the treatment of vein disorders
+            | that are associated with substantial pain and other complications, but individual
+            | insurance companies may limit the types of therapy that are covered. Please
+            | check with your insurance provider.
+          p
+            | For your conveience the table above contains the codes that your insurer might ask you for,
+            | when discussing your varicose veins. All the codes are for first time (primary) disease
+            | on one leg.
+
+          p Our consultants are registered providers for
+          ul
+            li Aviva
+            li BUPA
+            li AXA / PPP
+            li Health Online
+            li Cigna
+            li Vitality Health (previous Pru Health)
+            li Simply Health
+
+  a(name="booking_anchor")
+  section#testimonial.text-center
+    .testimonial-wrapper
+      .container
+        .row
+          .col-md-5.col-md-offset-1
+            h2.text-center
+              | Arranging to see someone is easy. We even offer a free #{site.mini_consult_duration} minute vein
+              | consultation if you would just like to make sure a treatment can be offered.
+
+          .col-md-4
+            != partial('booking_form')
