@@ -6,10 +6,10 @@ section.navs(style="position: absolute; padding-left: 50px;")
     .container
         ul.nav.navbar-right(class=document.header_light && document.header_light == true ? "nav-tel-dark" : "nav-tel")
           li
-            a(href="tel:08000209511")
+            a(href="#{site.telephone_url}")
               i.fa.fa-phone
               | &nbsp;
-              | 0800 020 9511
+              = site.telephone
 
   nav.navbar.navbar-default.navbar-static-top(role='navigation' style="background-color: transparent; top:-80px;")
     .container

@@ -42,12 +42,12 @@ block content
              #email-cta-fail.margin-top-10.alert.alert-danger.collapse(role="alert")
               | We are sorry, but there was an error sending your request. Please try
               | again or call our free number
-              | <a href="tel:0800 020 9511" class="alert-link">0800 020 9511</a>.
+              | <a href="#{site.telephone_url}" class="alert-link">#{site.telephone}</a>.
 
         .row
           .col-sm-12.col-md-9.text-center
             h4 Or free call on 
-              a(role="button", href="tel:08000209511") 0800 020 9511
+              a(role="button", href="#{site.telephone_url}") #{site.telephone}
 
   section.starting-text
     .container

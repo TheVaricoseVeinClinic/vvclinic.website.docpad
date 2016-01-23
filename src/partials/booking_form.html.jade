@@ -1,9 +1,10 @@
 .appointment
   .header.text-center
     h2 Make an Appointment
-    a.number(href='tel:08000209511')
+    a.number(href='#{site.telephone_url}')
       i.fa.fa-phone.fa-fw
-      |  0800 020 9511
+      &nbsp;
+      | #{site.telephone}
     span.or OR
   // form of appointment
   .row
@@ -37,7 +38,7 @@
         #booking-fail.margin-top-10.alert.alert-danger.collapse(role="alert")
           | Really sorry, there was an error sending your request. Please try
           | again or call our free number
-          | <a href="tel:0800 020 9511" class="alert-link">0800 020 9511</a>.
+          | <a href="#{site.telephone_url}" class="alert-link">#{site.telephone}</a>.
 
       .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1
         input.btn.btn-primary.send(type='submit', value='Send')
