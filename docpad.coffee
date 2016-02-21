@@ -28,7 +28,7 @@ docpadConfig = {
 				veins, varicose, varicose veins, vein removal, thread veins, laser therapy, evla, evlt, rfa, radiofrequency
 				"""
 
-			telephone: "0800 999 1 123"
+			telephone: "0800 999 1123"
 			telephone_url: "tel:08009991123"
 			fax_number: "01276 526868"
 			
