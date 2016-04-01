@@ -1,9 +1,9 @@
-section.navs(style="position: absolute; padding-left: 50px;")
+section.navs
 
   //- This nav MUST come above the main navbar otherwise the main one
   //- overlaps it and the a hrefs don't work
-  nav.navbar.navbar-default.navbar-static-top(role='contact' style="z-index: 1000;padding-bottom: 0")
-    .container
+  nav.navbar.navbar-default.navbar-static-top.contact-nav(role='contact')
+    .container-fluid
         ul.nav.navbar-right(class=document.header_light && document.header_light == true ? "nav-tel-dark" : "nav-tel")
           li
             a(href="#{site.telephone_url}")
@@ -12,7 +12,7 @@ section.navs(style="position: absolute; padding-left: 50px;")
               = site.telephone
 
   nav.navbar.navbar-default.navbar-static-top(role='navigation' style="background-color: transparent; top:-80px;")
-    .container
+    .container-fluid
       //- Brand and toggle get grouped for better mobile display
       .navbar-header
         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-nav-bar')
@@ -49,4 +49,3 @@ section.navs(style="position: absolute; padding-left: 50px;")
             a(href='/contact.html') Contact
       //- navbar-collapse
     //- container-fluid
-
