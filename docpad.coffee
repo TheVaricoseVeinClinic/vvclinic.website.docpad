@@ -13,10 +13,10 @@ docpadConfig = {
 		# Specify some site properties
 		site:
 			# The production url of our website
-			url: "http://www.thevaricoseveinclinic.co.uk"
+			url: "http://www.thevaricoseveinsclinic.co.uk"
 
 			# The default title of our website
-			title: "The Varicose Vein Clinic"
+			title: "The Varicose Veins Clinic"
 
 			# The website description (for SEO)
 			description: """
@@ -31,9 +31,9 @@ docpadConfig = {
 			telephone: "0800 999 1123"
 			telephone_url: "tel:08009991123"
 			fax_number: "01276 526868"
-			
+
 			mini_consult_duration: "5"
-			
+
 		# -----------------------------
 		# Helper Functions
 
