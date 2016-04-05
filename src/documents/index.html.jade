@@ -54,7 +54,7 @@ block content
     .container
       .row
         .welcome
-          h2.welcome-title Welcome To The Varicose Vein Clinic
+          h2.welcome-title Welcome To The Varicose Veins Clinic
           p.welcome-txt
             | A private clinic specialising in the treatment of varicose veins, spider veins,
             | flare / thread veins (including facial) and other vascular conditions. Backed
@@ -77,6 +77,25 @@ block content
             | Foam Sclerotherapy and Micro Sclerotherapy for thread and spider veins. We run clinics from a number of locations including
             | Surrey, Hampshire, Berkshire and Ascot and at times to suit you. All clinics are run by Consultant Surgeons
 
+  mixin testimonial(name)
+    .item&attributes(attributes)
+      #client-speech
+        .item
+          .row
+            .col-md-12
+              i.fa.fa-quote-left
+            .col-md-8.col-md-offset-2
+              p.client-comment.text-center
+                if block
+                  block
+                else
+                  p Error: No text
+            .col-md-12
+              i.fa.fa-quote-right
+
+          .row.text-center
+            p.client-name.text-center #{name}
+
   a(name="booking_anchor")
   section#testimonial.text-center
     .testimonial-wrapper
@@ -91,116 +110,41 @@ block content
             #carousel-quotes.carousel.slide(data-ride='carousel')
               // Wrapper for slides
               .carousel-inner(role='listbox')
-                .item.active
-                  #client-speech
-                    .item
-                      .row
-                        .col-md-12
-                          i.fa.fa-quote-left
-                        .col-md-8.col-md-offset-2
-                          p.client-comment.text-center
-                            | I would like to recommend Mr David Gerrard who was my Consultant at Parkside
-                            | Suite at Frimley Park Hospital. I had a really bad varicose vein on my left leg
-                            | from bottom to the top was very thick and prominent, it got to the point I
-                            | wouldn’t wear dresses / skirts unless I had  my legs covered up and in the summers 
-                            | it would get very itchy and uncomfortable.
+                +testimonial('Ms Cannon')(class="active")
+                  | Great Service from start to finish.
+                  | I have already recommended the clinic to a friend. Mr Dastur and his team
+                  | went out of their way to make me feel relaxed and comfortable throughout
+                  | the procedure.
 
-                          p.client-comment.text-center
-                            | I had my consultation with Mr Gerrard in March 2015 and had my removal done on the
-                            | 24th of June under local anaesthetic. I had the Endovenous Laser Therapy this was
-                            | done in an evening surgery appointment and was able to walk out of the hospital
-                            | I have to say this was very pain free and within a day or so I had my bandages
-                            | off and wore a stocking for 10 days and 5 nights its now just over a month on and
-                            | am so pleased with the result no sign of the vein would highly recommend this
-                            | treatment to anyone my family and friends can’t believe the result.
+                +testimonial('Mrs Bates')
+                  | I would like to recommend Mr David Gerrard who was my Consultant at Parkside
+                  | Suite at Frimley Park Hospital. I had a really bad varicose vein on my left leg
+                  | from bottom to the top was very thick and prominent, it got to the point I
+                  | wouldn’t wear dresses / skirts unless I had  my legs covered up and in the summers 
+                  | it would get very itchy and uncomfortable.
+                  br
+                  | I had my consultation with Mr Gerrard in March 2015 and had my removal done on the
+                  | 24th of June under local anaesthetic. I had the Endovenous Laser Therapy this was
+                  | done in an evening surgery appointment and was able to walk out of the hospital
+                  | I have to say this was very pain free and within a day or so I had my bandages
+                  | off and wore a stocking for 10 days and 5 nights its now just over a month on and
+                  | am so pleased with the result no sign of the vein would highly recommend this
+                  | treatment to anyone my family and friends can’t believe the result.
+                  
+                +testimonial('Mrs Behrendt')
+                  | Very impressed with Parkside and Mr Dastur, he is an excellent consultant
 
-                        .col-md-12
-                          i.fa.fa-quote-right
-                      .row.text-center
-                        p.client-name.text-center Mrs Bates
+                +testimonial('Mrs Brooker-Jones')
+                  | The staff were brilliant!! I had to have two operations and the treatment
 
-                .item
-                  #client-speech
-                    .item
-                      .row
-                        .col-md-12
-                          i.fa.fa-quote-left
-                        .col-md-8.col-md-offset-2
-                          p.client-comment.text-center
-                            | Great Service from start to finish.
-                            | I have already recommended the clinic to a friend. Mr Dastur and his team
-                            | went out of their way to make me feel relaxed and comfortable throughout
-                            | the procedure.
-                        .col-md-12
-                          i.fa.fa-quote-right
-
-                      .row.text-center
-                        p.client-name.text-center Ms Cannon
-
-                .item
-                  #client-speech
-                    .item
-                      .row
-                        .col-md-12
-                          i.fa.fa-quote-left
-                        .col-md-8.col-md-offset-2
-                          p.client-comment.text-center
-                            | Very impressed with Parkside and Mr Dastur, he is an excellent consultant
-                        .col-md-12
-                          i.fa.fa-quote-right
-
-                      .row.text-center
-                        p.client-name.text-center Mrs Behrendt
-
-                .item
-                  #client-speech
-                    .item
-                      .row
-                        .col-md-12
-                          i.fa.fa-quote-left
-                        .col-md-8.col-md-offset-2
-                          p.client-comment.text-center
-                            | The staff were brilliant!! I had to have two operations and the treatment
-                            | and aftercare never faltered
-                        .col-md-12
-                          i.fa.fa-quote-right
-
-                      .row.text-center
-                        p.client-name.text-center Mrs Brooker-Jones
-
-                .item
-                  #client-speech
-                    .item
-                      .row
-                        .col-md-12
-                          i.fa.fa-quote-left
-                        .col-md-8.col-md-offset-2
-                          p.client-comment.text-center
-                            | I have been lucky enough to have been treated by all 3 doctors on the
-                            | team! I found them all very jolly and courteous. My treatment and aftercare
-                            | was first class and the nurses were great! Would definitly reccomend this
-                            | clinic to anyone who needs their veins done!
-                        .col-md-12
-                          i.fa.fa-quote-right
-
-                      .row.text-center
-                        p.client-name.text-center Mrs Myers
-
-                .item
-                  #client-speech
-                    .item
-                      .row
-                        .col-md-12
-                          i.fa.fa-quote-left
-                        .col-md-8.col-md-offset-2
-                          p.client-comment.text-center
-                            | Excellent reception and treatment
-                        .col-md-12
-                          i.fa.fa-quote-right
-
-                      .row.text-center
-                        p.client-name.text-center Ms Mazurk
-
+                +testimonial('Mrs Myers')
+                  | I have been lucky enough to have been treated by all 3 doctors on the
+                  | team! I found them all very jolly and courteous. My treatment and aftercare
+                  | was first class and the nurses were great! Would definitly reccomend this
+                  | clinic to anyone who needs their veins done!
+              
+                +testimonial('Ms Mazurk')
+                  | Excellent reception and treatment
 
               a.left.carousel-control(href='#carousel-quotes', role='button', data-slide='prev')
                 i.fa.fa-angle-left.fa-3x
