@@ -32,7 +32,7 @@ docpadConfig = {
 			telephone_url: "tel:08009991123"
 			fax_number: "01276 526868"
 
-			mini_consult_duration: "5"
+			mini_consult_duration: "10"
 
 		# -----------------------------
 		# Helper Functions
