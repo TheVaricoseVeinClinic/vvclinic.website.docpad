@@ -64,10 +64,10 @@ docpadConfig = {
 	        deployBranch: 'master'
 	    nodesass:
 	    	outputStyle: 'compressed'	# nested / compressed
-	    grunt:
-	    	writeAfter: false
-	    	generateAfter: []
-	    	warnOnError: true
+	    # grunt:
+	    # 	writeAfter: false
+	    # 	generateAfter: []
+	    # 	warnOnError: true
 		cleancss:
 	        # These are options passed to the clean-css dependency
 	        cleancssOpts:
