@@ -147,15 +147,21 @@ section.navs {
     height: 150px;
 }
 
-@media(max-width:768px){
+@media(max-width:886px){
     .logo-img {
         height: 100px;
     }
 }
 
+@media(max-width:768px){
+    .logo-img {
+        height: 90px;
+    }
+}
+
 @media only screen and (max-width:320px){
     .logo-img {
-        height: 60px;
+        height: 70px;
     }
 }
 
