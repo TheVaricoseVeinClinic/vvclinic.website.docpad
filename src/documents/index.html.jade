@@ -31,7 +31,8 @@ block content
               form#cta-form.form-inline(action="#")
                 .form-group.form-group-lg
                   label.sr-only Email
-                  input#email-cta.form-control.input-lg.cta-form-email(type="email" name="email" placeholder="Your Email ...")
+                  input#email-cta.form-control.input-lg.cta-form-field(type="email" name="email" placeholder="Your Email ...")
+                  input#tel-cta.form-control.input-lg.cta-form-field(type="telephone" name="telephone" placeholder="Phone number ...")
                   button.btn.btn-success.btn-lg Send
                   //- Extra formspree.io fields
                   input(type="hidden" name="_next" value="/")

@@ -458,10 +458,20 @@ li:last-child
     margin-bottom: 0.5em;
 }
 
-@media only screen and (min-width: 480px) {
-    .form-inline .form-group .cta-form-email {
-        width:420px;
-        margin-right: 20px;
+.form-inline .form-group .cta-form-field {
+    margin-right: 20px;
+}
+
+// @media only screen and (min-width: 481px) {
+//     .form-inline .form-group .cta-form-field {
+//         //width:210px;
+//         margin-right: 20px;
+//     }
+// }
+
+@media only screen and (max-width: 767px) {
+    .form-inline .form-group .cta-form-field {
+        margin-bottom: 0.7em;
     }
 }
 
