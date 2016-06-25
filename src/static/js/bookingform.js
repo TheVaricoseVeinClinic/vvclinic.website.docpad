@@ -4,10 +4,8 @@ $(document).ready(function() {
         e.preventDefault();
         console.log("Sending Booking");
 
-        // Ref: http://blog.danielw.co/Sending-Email-from-Github-Pages/
         $.ajax({
-            //- btoa("//formspree.io/neville@dastur.me.uk")
-            url: atob("Ly9mb3Jtc3ByZWUuaW8vbmV2aWxsZUBkYXN0dXIubWUudWs="),
+            url: atob(#{formspree_email_url}),
             type: "POST",
             data: $("#booking-form").serialize(),
             dataType: "json",
@@ -31,6 +29,5 @@ $(document).ready(function() {
             }
         });
     });
-    
-});
 
+});

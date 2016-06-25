@@ -34,6 +34,10 @@ docpadConfig = {
 
 			mini_consult_duration: "10"
 
+      # Ref: http://blog.danielw.co/Sending-Email-from-Github-Pages/
+      # btoa("//formspree.io/mail@thevaricoseveinsclinic.co.uk")
+			formspree_email_url: 'Ly9mb3Jtc3ByZWUuaW8vbWFpbEB0aGV2YXJpY29zZXZlaW5zY2xpbmljLmNvLnVr'
+
 		# -----------------------------
 		# Helper Functions
 
