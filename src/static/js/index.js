@@ -6,9 +6,8 @@ $(document).ready(function() {
         e.preventDefault();
         console.log("Sending CTA");
 
-        // Ref: http://blog.danielw.co/Sending-Email-from-Github-Pages/
         $.ajax({
-            url: atob("Ly9mb3Jtc3ByZWUuaW8vbmV2aWxsZUBkYXN0dXIubWUudWs="), //-"//formspree.io/neville@dastur.me.uk",
+            url: atob(#{formspree_email_url}),
             type: "POST",
             data: $("#cta-form").serialize(),
             dataType: "json",
@@ -32,6 +31,5 @@ $(document).ready(function() {
             }
         });
     });
-    
-});
 
+});
