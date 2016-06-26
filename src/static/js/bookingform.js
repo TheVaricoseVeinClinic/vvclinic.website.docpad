@@ -5,7 +5,7 @@ $(document).ready(function() {
         console.log("Sending Booking");
 
         $.ajax({
-            url: atob(#{formspree_email_url}),
+            url: atob('Ly9mb3Jtc3ByZWUuaW8vbWFpbEB0aGV2YXJpY29zZXZlaW5zY2xpbmljLmNvLnVr'),
             type: "POST",
             data: $("#booking-form").serialize(),
             dataType: "json",
