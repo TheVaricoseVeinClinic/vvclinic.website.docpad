@@ -34,6 +34,10 @@ docpadConfig = {
 
 			mini_consult_duration: "10"
 
+			# Google business place ID, needed to make a reviews link
+			# https://developers.google.com/places/place-id
+			google_place_id: "ChIJ20ZbKjfVdUgRF2Roi2wvV1o"
+
       # Ref: http://blog.danielw.co/Sending-Email-from-Github-Pages/
       # btoa("//formspree.io/mail@thevaricoseveinsclinic.co.uk")
 			formspree_email_url: 'Ly9mb3Jtc3ByZWUuaW8vbWFpbEB0aGV2YXJpY29zZXZlaW5zY2xpbmljLmNvLnVr'
@@ -62,6 +66,9 @@ docpadConfig = {
 			# Merge the document keywords with the site keywords
 			@site.keywords.concat(@document.keywords or []).join(', ')
 
+		getGoogleReviewURL: ->
+			"http://search.google.com/local/writereview?placeid=#{@site.google_place_id}"
+			 
 	plugins:
 	    ghpages:
 	        deployRemote: 'target'
