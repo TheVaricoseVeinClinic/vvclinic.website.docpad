@@ -2,7 +2,7 @@ section.navs
 
   //- This nav MUST come above the main navbar otherwise the main one
   //- overlaps it and the a hrefs don't work
-  nav.navbar.navbar-default.navbar-static-top.contact-nav(role='contact')
+  nav.navbar.navbar-default.navbar-static-top.contact-nav(role='contact' style='z-index: 9999;')
     .container-fluid
         ul.nav.navbar-right(class=document.header_light && document.header_light == true ? "nav-tel-dark" : "nav-tel")
           li
